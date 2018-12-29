@@ -67,7 +67,7 @@ struct conn_s *initialize_conn (int client_fd, const char *ipaddr,
         connptr->error_string = NULL;
         connptr->error_number = -1;
 
-        connptr->connect_method = FALSE;
+        connptr->connect_method = CM_FALSE;
         connptr->show_stats = FALSE;
 
         connptr->protocol.major = connptr->protocol.minor = 0;
